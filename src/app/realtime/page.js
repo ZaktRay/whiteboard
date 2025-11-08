@@ -4,7 +4,7 @@ import { useSyncDemo } from '@tldraw/sync'
 import 'tldraw/tldraw.css'
 import { useSearchParams} from "next/navigation";
 
-export default function Collab() {
+export default function RealTime() {
     const searchParams = useSearchParams();
     const store = useSyncDemo({ roomId: searchParams.get("roomId") });
 
